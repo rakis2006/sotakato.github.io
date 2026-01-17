@@ -14,10 +14,32 @@ header{
 h1{
   color: #005bac;
 }
+/* 全体設定：余白を含めて幅を計算するようにする */
+* {
+    box-sizing: border-box;
+}
 
-.work-card{
-  border: 1px solid #ddd;
-  padding: 15px;
-  margin-bottom: 10px;
-  border-radius: 5px;
+/* カードを並べるための親要素の設定 */
+.works-container {
+    display: flex;
+    flex-wrap: wrap; /* 幅が足りなくなったら改行する */
+    gap: 20px;       /* カード同士の間隔 */
+    justify-content: space-between; /* 両端に寄せて配置 */
+}
+
+/* ワークカード自体の設定 */
+.work-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    /* 全体の半分(50%)から、gap(間隔)の半分を引いたサイズにする */
+    width: calc(50% - 10px); 
+    background-color: #fff;
+}
+
+/* スマホで見るときは幅を100%にする（1列にする） */
+@media (max-width: 600px) {
+    .work-card {
+        width: 100%;
+    }
 }
