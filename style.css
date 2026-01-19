@@ -20,6 +20,18 @@ h1{
     box-sizing: border-box;
 }
 
+h2 {
+    margin-top: 10px;    /* 上の余白を10pxに（標準は約20〜30px） */
+    margin-bottom: 5px;  /* 下の余白を5pxに */
+    color: #333;         /* 見出しの色も少し調整すると統一感が出ます */
+}
+
+/* 特定のセクション（skillsなど）のリストの余白も詰めたい場合 */
+#skills ul {
+    margin-top: 5px;
+    padding-left: 20px; /* リストの点が見えるように左余白は残す */
+}
+
 /* カードを並べるための親要素の設定 */
 .works-container {
     display: flex;
