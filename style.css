@@ -34,6 +34,10 @@ h2 {
     padding-left: 20px; /* リストの点が見えるように左余白は残す */
 }
 
+h4{
+    margin-top: 10px;    /* 上の余白を10pxに（標準は約20〜30px） */
+    margin-bottom: 5px;  /* 下の余白を5pxに */
+}
 /* カードを並べるための親要素の設定 */
 .works-container {
     display: flex;
