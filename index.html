@@ -45,12 +45,12 @@
                     allowfullscreen>
                 </iframe>
             </div>
-            
+
     <h4>作品詳細</h4>
     <p>
         「にゃんこ大戦争」のゲームシステムを参考に制作した、横スクロール型のタワーディフェンスゲームです。
         自陣からスライムを召喚し、敵陣の耐久値をゼロにすることで勝利となります。
-        キャラクターのステータス管理、攻撃判定、資金のリソース管理など、ゲームの根幹となるシステムを自力で実装しました。
+        キャラクターのステータス管理、攻撃判定、資金のリソース管理など、ゲームの根幹となるシステムを実装しました。
     </p>
 
     <h4>工夫した点</h4>
@@ -71,22 +71,40 @@
 
     </div>
 
-          <div class="work-card">
-            <h3>書籍管理アプリ</h3>
-            <p>一回生の冬の短期インターンに参加した際にチームで開発した書籍管理アプリです。</p>
-            <div style="position: relative; width: 100%; padding-bottom: 56.25%; height: 0; overflow: hidden; margin: 10px 0;">
-                <iframe 
-                    src="https://www.youtube.com/embed/m4Nh_qM5ssE?si=QScyM_M5k-uyPvne" 
-                    title="YouTube video player" 
-                    frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                    referrerpolicy="strict-origin-when-cross-origin" 
-                    allowfullscreen
-                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;">
-                </iframe>
-            </div>
-            <p><strong>工夫した点：</strong>UIの意識</p>
-          </div>
+    <div class="work-card">
+    <h3>書籍管理システム (Webアプリ)</h3>
+    <p><strong>制作時期：</strong>2025年 3月（3日間 短期インターン）</p>
+    <p><strong>使用技術：</strong>Java (Spring Boot), MySQL, Spring Security, Thymeleaf</p>
+
+    <h4>プロジェクト概要</h4>
+    <p>
+        「おすすめの書籍を共有する」既存のWebアプリに対し、ユーザーの利便性を高めるための機能拡張とUI改善をチームで行いました。
+        大阪のメンバーとリモートで連携し、実務と同様の「要件定義」「設計概要の作成」から実装までを担当しました。
+    </p>
+
+    <h4>主な実装・改善内容</h4>
+    <ul>
+        <li>
+            <strong>Spring Securityを用いたセキュアな認証：</strong><br>
+            ログイン機能を実装し、管理者ユーザーのパスワードを起動時にランダム生成してハッシュ化管理するなど、セキュリティを意識した設計を行いました [cite: 3, 4, 5]。
+        </li>
+        <li>
+            <strong>検索・並び替え機能の高度化：</strong><br>
+            書籍名による絞り込み検索に加え、発売日の「新しい順・古い順」の切り替え機能を実装し、データ抽出の利便性を向上させました [cite: 84, 86]。
+        </li>
+        <li>
+            <strong>入力体験(UX)の向上：</strong><br>
+            書籍追加時の「タグ機能」や、エラー時の即時フィードバック（バリデーション）、削除前の確認モーダル表示など、ユーザーが迷わないUI/UXを追求しました [cite: 177, 183, 231]。
+        </li>
+    </ul>
+
+    <h4>工夫した点（チーム開発）</h4>
+    <p>
+        要件定義の段階で「どのような項目が必要か（タイトル、著者、出版日、タグ等）」を詳細に定義し、共通認識を持って開発を進めました。
+        限られた3日間という期間内で、リモート環境ながら円滑なコミュニケーションを取り、機能の実装を完遂させました。
+    </p>
+
+    </div>
 
           <div class="work-card">
             <h3>飲食系モバイルオーダー画面の作成</h3>
