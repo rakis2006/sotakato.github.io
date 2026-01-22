@@ -30,46 +30,392 @@
       </section>
 
       <section id="works">
-        <h2>制作物一覧</h2>
+        <h2>制作物一覧（新しい順）</h2>
         <div class="works-container">
           
-        <div class="work-card">
-    <h3>スライム大戦争 (Processing)</h3>
-    <p><strong>制作時期：</strong>2024年 冬（大学1年次 最終課題）</p>
-    <p><strong>使用技術：</strong>Processing（Javaベースの視覚表現用環境）</p>
-    
-    <div style="position: relative; width: 100%; padding-bottom: 56.25%; height: 0; overflow: hidden; margin: 10px 0;">
-                <iframe 
-                    src="https://www.youtube.com/embed/TC8axGvTq6k?si=uoIysRe5zMrRRssn" 
-                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;"
-                    allowfullscreen>
-                </iframe>
-            </div>
 
-    <h4>作品詳細</h4>
+            <div class="work-card">
+    <h3>ポートフォリオサイトの制作</h3>
+    <p><strong>制作時期：</strong>2026年 1月（自身のキャリア構築として制作）</p>
+    <p><strong>使用技術：</strong>HTML, CSS, GitHub Pages</p>
+
+    <h4>プロジェクト概要</h4>
     <p>
-        「にゃんこ大戦争」のゲームシステムを参考に制作した、横スクロール型のタワーディフェンスゲームです。
-        自陣からスライムを召喚し、敵陣の耐久値をゼロにすることで勝利となります。
-        キャラクターのステータス管理、攻撃判定、資金のリソース管理など、ゲームの根幹となるシステムをで実装しました。
+        これまでの大学生活で制作してきたアプリケーションや、チームでの開発実績を統合的に管理・公開するためのポートフォリオサイトです。
+        採用担当者が「数分でスキルの核心を理解できる」ことをゴールに掲げ、情報の情報のスキャンしやすさを最優先に設計しました。
     </p>
 
-    <h4>工夫した点</h4>
+    <h4>技術的な工夫点</h4>
     <ul>
         <li>
-            <strong>オブジェクト指向による効率的な管理：</strong><br>
-            味方・敵の全てのキャラクターを「Characterクラス」として抽象化し、継承を利用することで、異なるステータスや挙動を持つ多彩なスライムを最小限のコードで実装しました。
+            <strong>情報の階層化と視覚的な分かりやすさ：</strong><br>
+            各プロジェクトの「概要」「技術的工夫」「得たもの」を構造化し、専門用語の解説を添えることで、技術者以外の方が見ても理解しやすい親切な設計を心がけました。
         </li>
         <li>
-            <strong>ゲームバランスの追求：</strong><br>
-            召喚コスト、攻撃力、移動速度の数値を細かく調整し、単調な連打ゲームにならないよう、戦略性を持たせるチューニングを行いました。
+            <strong>GitHub Pagesによるデプロイの自動化：</strong><br>
+            GitHubのリポジトリと連携させることで、コードの更新と同時にサイトが自動反映されるパイプラインを活用。エンジニアとしての継続的なアウトプットを支える基盤を構築しました。
         </li>
         <li>
-            <strong>描画負荷の最適化：</strong><br>
-            大量のキャラクターが画面上に現れても処理が重くならないよう、配列やArrayListを活用して不要になったオブジェクトを適切にメモリから解放する処理を工夫しました。
+            <strong>レスポンシブデザインの実装：</strong><br>
+            CSSを用いて、スマートフォンでも実績がスムーズに閲覧できるレイアウトを構築。閲覧者のデバイスを問わないユーザー体験（UX）を意識しました。
         </li>
     </ul>
 
+    <h4>この制作を通じて得たもの</h4>
+    <p>
+        <strong>「伝える技術」もエンジニアのスキル：</strong><br>
+        どんなに優れたコードを書いても、その価値を他者に正しく伝えられなければ社会には届かないということを、サイト制作を通じて痛感しました。情報の取捨選択と論理的な構成力を磨く良い経験となりました。
+    </p>
+    <p>
+        <strong>公開することによる責任感：</strong><br>
+        自分の技術をインターネット上に公開（デプロイ）することで、ソースコードの整理や権利関係の確認など、プロトタイプを作るだけでは意識しきれなかった「公開物としての品質」を意識する習慣がつきました。
+    </p>
+</div>
+
+       <div class="work-card">
+    <h3>学内コミュニティ形成支援マッチングアプリ（チーム開発）</h3>
+    <p><strong>プロジェクト期間：</strong>2025年 11月 〜 現在進行中</p>
+    <p><strong>役割・担当：</strong>フロントエンド開発リーダー</p>
+    <p><strong>使用技術：</strong>Flutter (Dart), HTML, CSS, Git</p>
+
+    <div style="background: #f4f4f4; border: 1px dashed #ccc; padding: 40px; text-align: center; margin: 10px 0; border-radius: 8px;">
+        <p style="color: #666; font-weight: bold;">
+            [ 2026年 春 学内リリース予定 ]<br>
+        </p>
     </div>
+
+    <h4>プロジェクト概要</h4>
+    <p>
+        大学内において、同じ趣味や目標を持つ学生同士が繋がれるマッチングプラットフォームです。
+        <strong>私自身がプロジェクト立ち上げの際に仲間集めに非常に苦労した経験から、この課題を解決したいと考え、</strong>勉強会で出会ったメンバーと共に「孤立する学生をゼロにする」という目標を掲げて企画・設計・実装を進めています。私はフロントエンド全般の責任者として、ユーザーが直感的に操作できるインターフェースの構築を担当しています。
+    </p>
+
+    <h4>技術的な工夫点（チーム開発としての視点）</h4>
+    <ul>
+        <li>
+            <strong>マルチプラットフォームを意識したFlutter開発：</strong><br>
+            学生がスマホとPCの両方からシームレスにアクセスできるよう、Flutterを採用。各デバイスの画面サイズに最適化された「レスポンシブデザイン」をHTML/CSSの知識も併用しながら実装しています。
+        </li>
+        <li>
+            <strong>API仕様の先行定義と調整：</strong><br>
+            バックエンド担当者と密に連携し、Swagger等を用いてAPI仕様を事前に固めることで、開発のフロント・バック分離を推進。効率的な並行開発をリードしています。
+        </li>
+        <li>
+            <strong>リリース品質のバリデーション実装：</strong><br>
+            不特定多数の学生が利用することを想定し、フォーム入力のバリデーションや例外処理を徹底。「ユーザーが誤った操作をしても壊れない」堅牢なフロントエンドを目指しています。
+        </li>
+    </ul>
+
+    <h4>このプロジェクトを通じて学んでいること</h4>
+    <p>
+        <strong>チーム開発における「伝える力」の重要性：</strong><br>
+        個人開発とは異なり、技術的な意図を言葉で正しく伝え、メンバーと認識を合わせることが開発速度に直結することを強く実感しています。GitHubを用いたコード管理や会議を通じ、チームで一つの目標に向かうプロセスを学んでいます。
+    </p>
+    <p>
+        <strong>プロダクトを世に出す責任感：</strong><br>
+        「自分が動かして満足する」段階を超え、実際のユーザー（同じ大学の学生）の手に渡ることを前提とした品質基準での開発を行っています。リリースに向けたデバッグや品質管理を通じ、エンジニアとしての責任感を養っています。
+    </p>
+</div>
+  
+    <div class="work-card">
+    <h3>怠けてしまう人のための「Todo日記アプリ」</h3>
+    <p><strong>制作時期：</strong>2026年 1月（大学2年次 GUIプログラミング最終課題）</p>
+    <p><strong>使用技術：</strong>Java</p>
+
+    <div style="position: relative; width: 100%; padding-bottom: 56.25%; height: 0; overflow: hidden; margin: 10px 0;">
+        <iframe 
+            src="https://www.youtube.com/embed/XfoLxFt7e54?si=LSxCXLJBWUdPndzh" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allowfullscreen
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;">
+        </iframe>
+    </div>
+
+    <h4>プロジェクト概要</h4>
+    <p>
+        日々のタスク管理と日記を一体化させ、活動を振り返りながら自己成長を促すデスクトップアプリです。
+        単なるリスト表示にとどまらず、タスクの達成率をリアルタイムでグラフ化し、過去7回分の推移を可視化することで、モチベーションを維持する工夫を凝らしました。
+    </p>
+
+    <h4>技術的な工夫点</h4>
+    <ul>
+        <li>
+            <strong>独自描画によるデータの視覚化：</strong><br>
+            外部ライブラリに頼らず、Javaの<code>paintComponent</code>を拡張して円グラフと棒グラフを自作実装しました。数値計算に基づいて角度や座標を制御し、視覚的に分かりやすいUIを実現しました。
+        </li>
+        <li>
+            <strong>イベント駆動型プログラミング：</strong><br>
+            ボタンクリックやタブの切り替え、ウィンドウ終了時の確認ダイアログなど、多様なイベントリスナーを適切に配置。ユーザーの操作に対して、システムが意図通りに反応する設計を徹底しました。
+        </li>
+        <li>
+            <strong>ファイル入出力による履歴管理：</strong><br>
+            <code>PrintWriter</code>や<code>BufferedReader</code>を活用し、日記データと達成率をテキストファイルに蓄積・復元する機能を実装。アプリを終了してもデータが失われない「実用性」を追求しました。
+        </li>
+    </ul>
+
+    <h4>この課題で得たもの</h4>
+    <p>
+        <strong>基礎技術の組み合わせによる問題解決：</strong><br>
+        Javaの基礎文法を学ぶ段階から、それを組み合わせて「実際に役立つ道具」へと昇華させる難しさと楽しさを学びました。特に、画面（UI）とデータ処理（ロジック）を切り離して考えることの重要性を、開発を通して実感できました。
+    </p>
+    <p>
+        <strong>ユーザー体験を意識した機能追加：</strong><br>
+        タスクがすべて完了した際に「パーフェクト！」というメッセージを表示するロジックを組み込むなど、使う人の気持ちを考えた小さな工夫が、システムの価値を高めることを学びました。
+    </p>
+</div>
+ 
+           <div class="work-card">
+    <h3>グラビティ・ランナー </h3>
+    <p><strong>制作時期：</strong>2026年 1月（大学2年次 感性情報イメージング最終課題）</p>
+    <p><strong>使用技術：</strong>TypeScript,HTML,CSS</p>
+
+    <div style="position: relative; width: 100%; padding-bottom: 56.25%; height: 0; overflow: hidden; margin: 10px 0;">
+        <iframe 
+            src="https://www.youtube.com/embed/aYs4n2a_2cU?si=LoZLDpeUzQNZ-FQo" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allowfullscreen
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;">
+        </iframe>
+    </div>
+
+    <h4>プロジェクト概要</h4>
+    <p>
+        重力を反転させて障害物を避けるランアクションゲームです。「20秒間耐えて女王を救い出す」という明確な目標に対し、難易度が時間が経つごとに上昇する仕組みを実装しました。
+        初めてのTypeScriptを用いた開発で、実際にWebサイトとして公開可能な形まで構築しました。
+    </p>
+
+    <h4>技術的な工夫点（設計と実装）</h4>
+    <ul>
+        <li>
+            <strong>オブジェクト指向による継承設計：</strong><br>
+            抽象クラス<code>GameObject</code>を定義し、プレイヤーや障害物へ機能を継承させる設計を行いました。これにより、当たり判定（AABB法）や更新処理の共通化を実現し、拡張性の高いコード構造にしました。
+        </li>
+        <li>
+            <strong>独立した物理エンジン（PhysicsWorld）：</strong><br>
+            重力の状態を管理する専用クラスを作成。単なる「上下移動」ではなく、加速度を用いた物理演算を行うことで、重力反転時の「浮遊感」や「着地」の滑らかさを追求しました。
+        </li>
+        <li>
+            <strong>感性を刺激するゲームデザイン：</strong><br>
+            経過時間に合わせて背景色が変化し、障害物のスピードが上昇する「緊張感の演出」を実装。スペースキーによる空中静止（線形補間を用いた座標計算）など、操作の楽しさを数学的に計算して実装しました。
+        </li>
+        <li>
+            <strong>永続的なユーザー体験：</strong><br>
+            Web Storage APIを利用し、ブラウザを閉じてもハイスコアが保持される機能を搭載。単発のプログラムではなく、一つの「プロダクト」としての完成度を目指しました。
+        </li>
+    </ul>
+
+    <h4>この課題で得たもの</h4>
+    <p>
+        <strong>未知の技術に対する「自走力」の獲得：</strong><br>
+        初めてのTypeScriptに挑戦する際、単にコードを書き写すのではなく、「なぜここでエラーが出るのか」「JavaScriptと何が違うのか」という背後にある法則性を探ることを大切にしました。最初は厳格な型定義に苦戦しましたが、公式ドキュメントを読み解きながらその意図を理解することで、中盤からは言語の特性を味方につけたスムーズな開発ができるようになりました。この経験を通じて、未知の言語であっても自ら学び、使いこなしていく「自走力」に大きな自信がつきました。
+    </p>
+</div>
+    
+        <div class="work-card">
+    <h3>プログラミング言語 難易度分析システム</h3>
+    <p><strong>制作時期：</strong>2026年 1月（大学2年次 データエンジニアリング最終課題）</p>
+    <p><strong>使用技術：</strong>Java, Google Custom Search API, Gemini API</p>
+
+    <div style="position: relative; width: 100%; padding-bottom: 56.25%; height: 0; overflow: hidden; margin: 10px 0;">
+        <iframe 
+            src="https://www.youtube.com/embed/2GETJfMPjPg?si=81WujTnSy2hGPJKI" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allowfullscreen
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;">
+        </iframe>
+    </div>
+
+    <h4>プロジェクト概要</h4>
+    <p>
+        新しいプログラミング言語を学ぶ学習者のために、ネット上の開発者のリアルな声を収集・分析し、学習難易度を可視化するシステムです。
+        Google検索APIで収集したネット上の開発者の生の情報を、Gemini APIに渡して多角的に分析させる「APIマッシュアップ」を実装しました。
+    </p>
+
+    <h4>技術的な工夫点（データエンジニアリング）</h4>
+    <ul>
+        <li>
+            <strong>APIマッシュアップの実装：</strong><br>
+            単一のAPIでは完結しない「情報の取得（Google）」と「意味の抽出（AI）」という2つの工程をJavaプログラム上で統合し、付加価値の高い情報を生成する仕組みを構築しました。
+        </li>
+        <li>
+            <strong>AIの出力結果の定義の厳格化：</strong><br>
+            AIの回答に「余計な挨拶」や「表記揺れ」が含まれないよう、responseSchemaを用いてJSON形式の構造を定義。スコアを整数（Integer）として受け取れるようにし、プログラム側での確実なデータ処理を実現しました。
+        </li>
+        <li>
+            <strong>実用的なアウトプットの設計：</strong><br>
+            「10段階の難易度スコア」に加え、初心者にも配慮した「子供でも分かる解説」を生成させるなど、ユーザーのターゲット層に合わせたシステムにしました。
+        </li>
+    </ul>
+
+    <h4>この課題で得たもの</h4>
+    <p>
+        <strong>API連携による価値創造の基礎：</strong><br>
+        既存のサービス（検索エンジンとAI）を組み合わせ、元のデータにはなかった「分析」という付加価値を与えるプロセスの面白さを学びました。これにより、ゼロから全てを作るだけでなく、既存の技術を統合して課題を解決する「マッシュアップ」の有用性を実感しました。
+    </p>
+    <p>
+        <strong>AIの解答を欲しいものにできるように意識した設計：</strong><br>
+        「AIの返答」という不確定な要素を、プログラムが扱える「厳格なデータ」へ変換する重要性を学びました。エラーを未然に防ぐためのデータ型定義やURLエンコードの実装を通じ、システム設計の基礎を習得できました。
+    </p>
+    <p>
+        <strong>データ活用からキャリア支援への視点：</strong><br>
+        収集したデータをどう見せるかというUXの観点に加え、今後は「市場価値（年収）」などの外部データとさらに連携させ、技術を社会的なニーズと結びつけて考える「サービス開発の視点」を得ることができました。
+    </p>
+</div>
+    
+    
+        <div class="work-card">
+    <h3>AI恋人アプリ「夢カノ」（ハッカソン初挑戦作品）</h3>
+    <p><strong>制作時期：</strong>2025年 12月（10日間）</p>
+    <p><strong>担当役割：</strong>チームリーダー / フロントエンド開発</p>
+
+    <div style="position: relative; width: 100%; padding-bottom: 56.25%; height: 0; overflow: hidden; margin: 10px 0;">
+        <iframe 
+            src="https://www.youtube.com/embed/rqSol1tl0rs?si=aWFvH80FsYuIeaYX" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allowfullscreen
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;">
+        </iframe>
+    </div>
+    <div style="position: relative; width: 100%; padding-bottom: 56.25%; height: 0; overflow: hidden; margin: 10px 0;">
+        <iframe 
+            src="https://www.youtube.com/embed/u6tG7q8xyuk?si=Kf2HHr7qBbcChQLg" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allowfullscreen
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;">
+        </iframe>
+    </div>
+
+    <h4>プロジェクト詳細とリーダーとしての取り組み</h4>
+    <p>
+        3人チームで挑んだ初のハッカソンです。当初はリモート中心の連携不足により進捗が滞っていましたが、私がリーダーとなりタスクの絞り込みとタスクの再割り当てを徹底したことで、開発スピードを大幅に向上させました。
+    </p>
+
+    <h4>直面した課題と苦渋の決断</h4>
+    <p>
+        フロントエンドを担当しつつ全体の進行を管理していましたが、対面作業に切り替わった際に、データベース側のタスクができたと思っていたができていなかったということがあり、予定通りの完成が危ぶまれる状況に陥りました。私は「未完成で終わらせない」ために機能の削減を提案し、完成を最優先する行動を促しましたが、一番大事な画像生成をユーザーができるようにするという部分ができませんでした。
+    </p>
+
+    <h4>ハッカソンを通じて得た教訓と改善点</h4>
+    <ul>
+        <li>
+            <strong>コミュニケーションの密度：</strong><br>
+            「できているだろう」という思い込みを排除し、リモート環境でも細かく進捗を可視化することの重要性を痛感しました。
+        </li>
+        <li>
+            <strong>トラブルを想定したバッファ設計：</strong><br>
+            機器故障などの不測の事態を含め、工数見積もりには余裕を持たせるべきだと学びました。
+        </li>
+        <li>
+            <strong>技術的な反省：</strong><br>
+            バックエンドとフロントエンドの連携部分で、早い段階でプロトタイプを作りそれを拡張していくような開発を進めておけば、より確実で、スムーズに統合できたという改善点を見つけました。
+        </li>
+    </ul>
+    <p>
+        結果として完全な形でのデプロイには至りませんでしたが、この「本気の失敗」から得たプロジェクト管理は、今の開発に大きく活きています。
+    </p>
+</div>
+
+
+          <div class="work-card">
+    <h3>Todo管理モバイルアプリ (Flutter,Firebase)</h3>
+    <p><strong>制作時期：</strong>2025年 10月（約1ヶ月間）</p>
+    <p><strong>使用技術：</strong>Dart (Flutter), Firebase (Cloud Firestore)</p>
+
+    <div style="position: relative; width: 100%; padding-bottom: 56.25%; height: 0; overflow: hidden; margin: 10px 0;">
+        <iframe 
+            src="https://www.youtube.com/embed/WLPLfz4WH70?si=GConyHeGcnjla8Sv" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allowfullscreen
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;">
+        </iframe>
+    </div>
+    
+    <h4>プロジェクト詳細</h4>
+    <p>
+        1ヶ月間のFlutter勉強会にて制作。教材はアラビア語の動画でしたが、単なる書き写しで終わらせず、<strong>「動画を見ずにゼロから自力で実装できるまで」</strong>、プロジェクトを何度も作り直して構造を体に叩き込みました。
+    </p>
+
+    <h4>習得へのプロセスと工夫</h4>
+    <ul>
+        <li>
+            <strong>徹底した反復練習：</strong><br>
+            最初は書き方を模倣するだけでしたが、2回目、3回目とゼロから作り直すことで、Flutter特有のWidget構成やデータの流れを深く理解しました。最終的には外部の解説に頼らず、ロジックを自力で構築できるまで精度を高めました。
+        </li>
+        <li>
+            <strong>FirebaseによるリアルタイムDB実装：</strong><br>
+            未経験からFirebaseとの連携に挑戦。何度もエラーに直面しながらも、メンターへの質問と自己学習を繰り返し、データのCRUD操作（追加・読み取り・更新・削除）を完璧に習得しました。
+        </li>
+    </ul>
+
+    <h4>この経験から得たもの</h4>
+    <p>
+        未知の技術であっても、<strong>「理解できるまで反復し、自分のものにする」</strong>という学習の型を確立できました。言語の壁や未経験という壁を、圧倒的な作業量で乗り越えた経験は、現在の開発スタイルの礎となっています。
+    </p>
+
+    
+</div>
+
+    
+    <div class="work-card">
+    <h3>飲食系モバイルオーダー UIデザイン</h3>
+    <p><strong>制作時期：</strong>2025年 7月（大学2年次 デザイン講義最終課題）</p>
+    <p><strong>使用ツール：</strong>Figma</p>
+
+    <div style="position: relative; width: 100%; padding-bottom: 56.25%; height: 0; overflow: hidden; margin: 10px 0;">
+                <iframe 
+                    src="https://www.youtube.com/embed/GbsNQlG1HwQ?si=D0FuUP41adPSlODo" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen
+                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;">
+                </iframe>
+            </div>
+            
+    <h4>プロジェクト詳細</h4>
+    <p>
+        実在する飲食店「日高屋」のモバイルオーダー画面をモデルに、既存の課題を分析し、「より直感的で注文ミスを防ぐデザイン」をコンセプトにプロトタイプを作成しました。
+        単なる模倣ではなく、実際の利用シーン（店舗の照明、客層、操作手順）を想定した再設計を行いました。
+    </p>
+
+    <h4>工夫した点（UXの意識）</h4>
+    <ul>
+        <li>
+            <strong>視認性の徹底：</strong><br>
+            店内の照明やスマホの明るさに左右されず、年配の方でも見やすいよう、コントラスト比の調整やフォントサイズの最適化を行いました。
+        </li>
+        <li>
+            <strong>注文フローの簡略化：</strong><br>
+            「トッピング選択からカート投入まで」のタップ回数を最小限に抑え、現在の注文状況が常に一目でわかるプログレス表示を取り入れました。
+        </li>
+    </ul>
+
+    <h4>苦労した点</h4>
+    <p>
+        <strong>「情報量」と「スッキリ感」の両立：</strong><br>
+        メニュー数が多い中で、写真の魅力とお得なセット情報をどう配置するかに苦労しました。Figmaのコンポーネント機能を活用して複数のパターンを作成し、実際に自分のスマホで操作しながら、指が届きやすい範囲（親指の可動域）に基づいたボタン配置を追求しました。
+    </p>
+
+    <div style="position: relative; width: 100%; padding-bottom: 56.25%; height: 0; overflow: hidden; margin: 10px 0;">
+        <iframe 
+            src="https://www.youtube.com/embed/GbsNQlG1HwQ?si=D0FuUP41adPSlODo" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" 
+            allowfullscreen
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;">
+        </iframe>
+    </div>
+</div>
+
 
           <div class="work-card">
     <h3>書籍管理システム (Webアプリ)</h3>
@@ -133,380 +479,43 @@
     </ul>
     </div>
 
-    <div class="work-card">
-    <h3>飲食系モバイルオーダー UIデザイン</h3>
-    <p><strong>制作時期：</strong>2025年 7月（大学2年次 デザイン講義最終課題）</p>
-    <p><strong>使用ツール：</strong>Figma</p>
-
+        <div class="work-card">
+    <h3>スライム大戦争 (Processing)</h3>
+    <p><strong>制作時期：</strong>2025年 1月（大学1年次 コンピュータープログラミングⅡ最終課題）</p>
+    <p><strong>使用技術：</strong>Processing（Javaベースのデザイン特化の言語）</p>
+    
     <div style="position: relative; width: 100%; padding-bottom: 56.25%; height: 0; overflow: hidden; margin: 10px 0;">
                 <iframe 
-                    src="https://www.youtube.com/embed/GbsNQlG1HwQ?si=D0FuUP41adPSlODo" 
-                    title="YouTube video player" 
-                    frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                    referrerpolicy="strict-origin-when-cross-origin" 
-                    allowfullscreen
-                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;">
+                    src="https://www.youtube.com/embed/TC8axGvTq6k?si=uoIysRe5zMrRRssn" 
+                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;"
+                    allowfullscreen>
                 </iframe>
             </div>
-            
-    <h4>プロジェクト詳細</h4>
+
+    <h4>作品詳細</h4>
     <p>
-        実在する飲食店「日高屋」のモバイルオーダー画面をモデルに、既存の課題を分析し、「より直感的で注文ミスを防ぐデザイン」をコンセプトにプロトタイプを作成しました。
-        単なる模倣ではなく、実際の利用シーン（店舗の照明、客層、操作手順）を想定した再設計を行いました。
+        「にゃんこ大戦争」のゲームシステムを参考に制作した、横スクロール型のタワーディフェンスゲームです。
+        自陣からスライムを召喚し、敵陣の耐久値をゼロにすることで勝利となります。
+        キャラクターのステータス管理、攻撃判定、資金のリソース管理など、ゲームの根幹となるシステムをで実装しました。
     </p>
 
-    <h4>工夫した点（UXの意識）</h4>
+    <h4>工夫した点</h4>
     <ul>
         <li>
-            <strong>視認性の徹底：</strong><br>
-            店内の照明やスマホの明るさに左右されず、年配の方でも見やすいよう、コントラスト比の調整やフォントサイズの最適化を行いました。
+            <strong>オブジェクト指向による効率的な管理：</strong><br>
+            味方・敵の全てのキャラクターを「Characterクラス」として抽象化し、継承を利用することで、異なるステータスや挙動を持つ多彩なスライムを最小限のコードで実装しました。
         </li>
         <li>
-            <strong>注文フローの簡略化：</strong><br>
-            「トッピング選択からカート投入まで」のタップ回数を最小限に抑え、現在の注文状況が常に一目でわかるプログレス表示を取り入れました。
+            <strong>ゲームバランスの追求：</strong><br>
+            召喚コスト、攻撃力、移動速度の数値を細かく調整し、単調な連打ゲームにならないよう、戦略性を持たせるチューニングを行いました。
+        </li>
+        <li>
+            <strong>描画負荷の最適化：</strong><br>
+            大量のキャラクターが画面上に現れても処理が重くならないよう、配列やArrayListを活用して不要になったオブジェクトを適切にメモリから解放する処理を工夫しました。
         </li>
     </ul>
 
-    <h4>苦労した点</h4>
-    <p>
-        <strong>「情報量」と「スッキリ感」の両立：</strong><br>
-        メニュー数が多い中で、写真の魅力とお得なセット情報をどう配置するかに苦労しました。Figmaのコンポーネント機能を活用して複数のパターンを作成し、実際に自分のスマホで操作しながら、指が届きやすい範囲（親指の可動域）に基づいたボタン配置を追求しました。
-    </p>
-
-    <div style="position: relative; width: 100%; padding-bottom: 56.25%; height: 0; overflow: hidden; margin: 10px 0;">
-        <iframe 
-            src="https://www.youtube.com/embed/GbsNQlG1HwQ?si=D0FuUP41adPSlODo" 
-            title="YouTube video player" 
-            frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            referrerpolicy="strict-origin-when-cross-origin" 
-            allowfullscreen
-            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;">
-        </iframe>
     </div>
-</div>
-
-          <div class="work-card">
-    <h3>Todo管理モバイルアプリ (Flutter,Firebase)</h3>
-    <p><strong>制作時期：</strong>2025年 10月（約1ヶ月間）</p>
-    <p><strong>使用技術：</strong>Dart (Flutter), Firebase (Cloud Firestore)</p>
-
-    <div style="position: relative; width: 100%; padding-bottom: 56.25%; height: 0; overflow: hidden; margin: 10px 0;">
-        <iframe 
-            src="https://www.youtube.com/embed/WLPLfz4WH70?si=GConyHeGcnjla8Sv" 
-            title="YouTube video player" 
-            frameborder="0" 
-            allowfullscreen
-            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;">
-        </iframe>
-    </div>
-    
-    <h4>プロジェクト詳細</h4>
-    <p>
-        1ヶ月間のFlutter勉強会にて制作。教材はアラビア語の動画でしたが、単なる書き写しで終わらせず、<strong>「動画を見ずにゼロから自力で実装できるまで」</strong>、プロジェクトを何度も作り直して構造を体に叩き込みました。
-    </p>
-
-    <h4>習得へのプロセスと工夫</h4>
-    <ul>
-        <li>
-            <strong>徹底した反復練習：</strong><br>
-            最初は書き方を模倣するだけでしたが、2回目、3回目とゼロから作り直すことで、Flutter特有のWidget構成やデータの流れを深く理解しました。最終的には外部の解説に頼らず、ロジックを自力で構築できるまで精度を高めました。
-        </li>
-        <li>
-            <strong>FirebaseによるリアルタイムDB実装：</strong><br>
-            未経験からFirebaseとの連携に挑戦。何度もエラーに直面しながらも、メンターへの質問と自己学習を繰り返し、データのCRUD操作（追加・読み取り・更新・削除）を完璧に習得しました。
-        </li>
-    </ul>
-
-    <h4>この経験から得たもの</h4>
-    <p>
-        未知の技術であっても、<strong>「理解できるまで反復し、自分のものにする」</strong>という学習の型を確立できました。言語の壁や未経験という壁を、圧倒的な作業量で乗り越えた経験は、現在の開発スタイルの礎となっています。
-    </p>
-
-    
-</div>
-
-        <div class="work-card">
-    <h3>AI恋人アプリ「夢カノ」（ハッカソン初挑戦作品）</h3>
-    <p><strong>制作時期：</strong>2025年 12月（10日間）</p>
-    <p><strong>担当役割：</strong>チームリーダー / フロントエンド開発</p>
-
-    <div style="position: relative; width: 100%; padding-bottom: 56.25%; height: 0; overflow: hidden; margin: 10px 0;">
-        <iframe 
-            src="https://www.youtube.com/embed/rqSol1tl0rs?si=aWFvH80FsYuIeaYX" 
-            title="YouTube video player" 
-            frameborder="0" 
-            allowfullscreen
-            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;">
-        </iframe>
-    </div>
-    <div style="position: relative; width: 100%; padding-bottom: 56.25%; height: 0; overflow: hidden; margin: 10px 0;">
-        <iframe 
-            src="https://www.youtube.com/embed/u6tG7q8xyuk?si=Kf2HHr7qBbcChQLg" 
-            title="YouTube video player" 
-            frameborder="0" 
-            allowfullscreen
-            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;">
-        </iframe>
-    </div>
-
-    <h4>プロジェクト詳細とリーダーとしての取り組み</h4>
-    <p>
-        3人チームで挑んだ初のハッカソンです。当初はリモート中心の連携不足により進捗が滞っていましたが、私がリーダーとなりタスクの絞り込みとタスクの再割り当てを徹底したことで、開発スピードを大幅に向上させました。
-    </p>
-
-    <h4>直面した課題と苦渋の決断</h4>
-    <p>
-        フロントエンドを担当しつつ全体の進行を管理していましたが、対面作業に切り替わった際に、データベース側のタスクができたと思っていたができていなかったということがあり、予定通りの完成が危ぶまれる状況に陥りました。私は「未完成で終わらせない」ために機能の削減を提案し、完成を最優先する行動を促しましたが、一番大事な画像生成をユーザーができるようにするという部分ができませんでした。
-    </p>
-
-    <h4>ハッカソンを通じて得た教訓と改善点</h4>
-    <ul>
-        <li>
-            <strong>コミュニケーションの密度：</strong><br>
-            「できているだろう」という思い込みを排除し、リモート環境でも細かく進捗を可視化することの重要性を痛感しました。
-        </li>
-        <li>
-            <strong>トラブルを想定したバッファ設計：</strong><br>
-            機器故障などの不測の事態を含め、工数見積もりには余裕を持たせるべきだと学びました。
-        </li>
-        <li>
-            <strong>技術的な反省：</strong><br>
-            バックエンドとフロントエンドの連携部分で、早い段階でプロトタイプを作りそれを拡張していくような開発を進めておけば、より確実で、スムーズに統合できたという改善点を見つけました。
-        </li>
-    </ul>
-    <p>
-        結果として完全な形でのデプロイには至りませんでしたが、この「本気の失敗」から得たプロジェクト管理は、今の開発に大きく活きています。
-    </p>
-</div>
-
-        <div class="work-card">
-    <h3>プログラミング言語 難易度分析システム</h3>
-    <p><strong>制作時期：</strong>2026年 1月（大学2年次 データエンジニアリング最終課題）</p>
-    <p><strong>使用技術：</strong>Java, Google Custom Search API, Gemini API</p>
-
-    <div style="position: relative; width: 100%; padding-bottom: 56.25%; height: 0; overflow: hidden; margin: 10px 0;">
-        <iframe 
-            src="https://www.youtube.com/embed/2GETJfMPjPg?si=81WujTnSy2hGPJKI" 
-            title="YouTube video player" 
-            frameborder="0" 
-            allowfullscreen
-            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;">
-        </iframe>
-    </div>
-
-    <h4>プロジェクト概要</h4>
-    <p>
-        新しいプログラミング言語を学ぶ学習者のために、ネット上の開発者のリアルな声を収集・分析し、学習難易度を可視化するシステムです。
-        Google検索APIで収集したネット上の開発者の生の情報を、Gemini APIに渡して多角的に分析させる「APIマッシュアップ」を実装しました。
-    </p>
-
-    <h4>技術的な工夫点（データエンジニアリング）</h4>
-    <ul>
-        <li>
-            <strong>APIマッシュアップの実装：</strong><br>
-            単一のAPIでは完結しない「情報の取得（Google）」と「意味の抽出（AI）」という2つの工程をJavaプログラム上で統合し、付加価値の高い情報を生成する仕組みを構築しました。
-        </li>
-        <li>
-            <strong>AIの出力結果の定義の厳格化：</strong><br>
-            AIの回答に「余計な挨拶」や「表記揺れ」が含まれないよう、responseSchemaを用いてJSON形式の構造を定義。スコアを整数（Integer）として受け取れるようにし、プログラム側での確実なデータ処理を実現しました。
-        </li>
-        <li>
-            <strong>実用的なアウトプットの設計：</strong><br>
-            「10段階の難易度スコア」に加え、初心者にも配慮した「子供でも分かる解説」を生成させるなど、ユーザーのターゲット層に合わせたシステムにしました。
-        </li>
-    </ul>
-
-    <h4>この課題で得たもの</h4>
-    <p>
-        <strong>API連携による価値創造の基礎：</strong><br>
-        既存のサービス（検索エンジンとAI）を組み合わせ、元のデータにはなかった「分析」という付加価値を与えるプロセスの面白さを学びました。これにより、ゼロから全てを作るだけでなく、既存の技術を統合して課題を解決する「マッシュアップ」の有用性を実感しました。
-    </p>
-    <p>
-        <strong>AIの解答を欲しいものにできるように意識した設計：</strong><br>
-        「AIの返答」という不確定な要素を、プログラムが扱える「厳格なデータ」へ変換する重要性を学びました。エラーを未然に防ぐためのデータ型定義やURLエンコードの実装を通じ、システム設計の基礎を習得できました。
-    </p>
-    <p>
-        <strong>データ活用からキャリア支援への視点：</strong><br>
-        収集したデータをどう見せるかというUXの観点に加え、今後は「市場価値（年収）」などの外部データとさらに連携させ、技術を社会的なニーズと結びつけて考える「サービス開発の視点」を得ることができました。
-    </p>
-</div>
-        <div class="work-card">
-    <h3>グラビティ・ランナー </h3>
-    <p><strong>制作時期：</strong>2026年 1月（大学2年次 感性情報イメージング最終課題）</p>
-    <p><strong>使用技術：</strong>TypeScript,HTML,CSS</p>
-
-    <div style="position: relative; width: 100%; padding-bottom: 56.25%; height: 0; overflow: hidden; margin: 10px 0;">
-        <iframe 
-            src="https://www.youtube.com/embed/2GETJfMPjPg?si=81WujTnSy2hGPJKI" 
-            title="YouTube video player" 
-            frameborder="0" 
-            allowfullscreen
-            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;">
-        </iframe>
-    </div>
-
-    <h4>プロジェクト概要</h4>
-    <p>
-        重力を反転させて障害物を避けるランアクションゲームです。「20秒間耐えて女王を救い出す」という明確な目標に対し、難易度が時間が経つごとに上昇する仕組みを実装しました。
-        初めてのTypeScriptを用いた開発で、実際にWebサイトとして公開可能な形まで構築しました。
-    </p>
-
-    <h4>技術的な工夫点（設計と実装）</h4>
-    <ul>
-        <li>
-            <strong>オブジェクト指向による継承設計：</strong><br>
-            抽象クラス<code>GameObject</code>を定義し、プレイヤーや障害物へ機能を継承させる設計を行いました。これにより、当たり判定（AABB法）や更新処理の共通化を実現し、拡張性の高いコード構造にしました。
-        </li>
-        <li>
-            <strong>独立した物理エンジン（PhysicsWorld）：</strong><br>
-            重力の状態を管理する専用クラスを作成。単なる「上下移動」ではなく、加速度を用いた物理演算を行うことで、重力反転時の「浮遊感」や「着地」の滑らかさを追求しました。
-        </li>
-        <li>
-            <strong>感性を刺激するゲームデザイン：</strong><br>
-            経過時間に合わせて背景色が変化し、障害物のスピードが上昇する「緊張感の演出」を実装。スペースキーによる空中静止（線形補間を用いた座標計算）など、操作の楽しさを数学的に計算して実装しました。
-        </li>
-        <li>
-            <strong>永続的なユーザー体験：</strong><br>
-            Web Storage APIを利用し、ブラウザを閉じてもハイスコアが保持される機能を搭載。単発のプログラムではなく、一つの「プロダクト」としての完成度を目指しました。
-        </li>
-    </ul>
-
-    <h4>この課題で得たもの</h4>
-    <p>
-        <strong>未知の技術に対する「自走力」の獲得：</strong><br>
-        初めてのTypeScriptに挑戦する際、単にコードを書き写すのではなく、「なぜここでエラーが出るのか」「JavaScriptと何が違うのか」という背後にある法則性を探ることを大切にしました。最初は厳格な型定義に苦戦しましたが、公式ドキュメントを読み解きながらその意図を理解することで、中盤からは言語の特性を味方につけたスムーズな開発ができるようになりました。この経験を通じて、未知の言語であっても自ら学び、使いこなしていく「自走力」に大きな自信がつきました。
-    </p>
-</div>
-<div class="work-card">
-    <h3>怠けてしまう人のための「Todo日記アプリ」</h3>
-    <p><strong>制作時期：</strong>2026年 1月（大学2年次 GUIプログラミング最終課題）</p>
-    <p><strong>使用技術：</strong>Java</p>
-
-    <div style="position: relative; width: 100%; padding-bottom: 56.25%; height: 0; overflow: hidden; margin: 10px 0;">
-        <iframe 
-            src="https://www.youtube.com/embed/XfoLxFt7e54?si=LSxCXLJBWUdPndzh" 
-            title="YouTube video player" 
-            frameborder="0" 
-            allowfullscreen
-            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;">
-        </iframe>
-    </div>
-
-    <h4>プロジェクト概要</h4>
-    <p>
-        日々のタスク管理と日記を一体化させ、活動を振り返りながら自己成長を促すデスクトップアプリです。
-        単なるリスト表示にとどまらず、タスクの達成率をリアルタイムでグラフ化し、過去7回分の推移を可視化することで、モチベーションを維持する工夫を凝らしました。
-    </p>
-
-    <h4>技術的な工夫点</h4>
-    <ul>
-        <li>
-            <strong>独自描画によるデータの視覚化：</strong><br>
-            外部ライブラリに頼らず、Javaの<code>paintComponent</code>を拡張して円グラフと棒グラフを自作実装しました。数値計算に基づいて角度や座標を制御し、視覚的に分かりやすいUIを実現しました。
-        </li>
-        <li>
-            <strong>イベント駆動型プログラミング：</strong><br>
-            ボタンクリックやタブの切り替え、ウィンドウ終了時の確認ダイアログなど、多様なイベントリスナーを適切に配置。ユーザーの操作に対して、システムが意図通りに反応する設計を徹底しました。
-        </li>
-        <li>
-            <strong>ファイル入出力による履歴管理：</strong><br>
-            <code>PrintWriter</code>や<code>BufferedReader</code>を活用し、日記データと達成率をテキストファイルに蓄積・復元する機能を実装。アプリを終了してもデータが失われない「実用性」を追求しました。
-        </li>
-    </ul>
-
-    <h4>この課題で得たもの</h4>
-    <p>
-        <strong>基礎技術の組み合わせによる問題解決：</strong><br>
-        Javaの基礎文法を学ぶ段階から、それを組み合わせて「実際に役立つ道具」へと昇華させる難しさと楽しさを学びました。特に、画面（UI）とデータ処理（ロジック）を切り離して考えることの重要性を、開発を通して実感できました。
-    </p>
-    <p>
-        <strong>ユーザー体験を意識した機能追加：</strong><br>
-        タスクがすべて完了した際に「パーフェクト！」というメッセージを表示するロジックを組み込むなど、使う人の気持ちを考えた小さな工夫が、システムの価値を高めることを学びました。
-    </p>
-</div>
-    <div class="work-card">
-    <h3>学内コミュニティ形成支援マッチングアプリ（チーム開発）</h3>
-    <p><strong>プロジェクト期間：</strong>2025年 11月 〜 現在進行中</p>
-    <p><strong>役割・担当：</strong>フロントエンド開発リーダー</p>
-    <p><strong>使用技術：</strong>Flutter (Dart), HTML, CSS, Git</p>
-
-    <div style="background: #f4f4f4; border: 1px dashed #ccc; padding: 40px; text-align: center; margin: 10px 0; border-radius: 8px;">
-        <p style="color: #666; font-weight: bold;">
-            [ 2026年 春 学内リリース予定 ]<br>
-        </p>
-    </div>
-
-    <h4>プロジェクト概要</h4>
-    <p>
-        大学内において、同じ趣味や目標を持つ学生同士が繋がれるマッチングプラットフォームです。
-        <strong>私自身がプロジェクト立ち上げの際に仲間集めに非常に苦労した経験から、この課題を解決したいと考え、</strong>勉強会で出会ったメンバーと共に「孤立する学生をゼロにする」という目標を掲げて企画・設計・実装を進めています。私はフロントエンド全般の責任者として、ユーザーが直感的に操作できるインターフェースの構築を担当しています。
-    </p>
-
-    <h4>技術的な工夫点（チーム開発としての視点）</h4>
-    <ul>
-        <li>
-            <strong>マルチプラットフォームを意識したFlutter開発：</strong><br>
-            学生がスマホとPCの両方からシームレスにアクセスできるよう、Flutterを採用。各デバイスの画面サイズに最適化された「レスポンシブデザイン」をHTML/CSSの知識も併用しながら実装しています。
-        </li>
-        <li>
-            <strong>API仕様の先行定義と調整：</strong><br>
-            バックエンド担当者と密に連携し、Swagger等を用いてAPI仕様を事前に固めることで、開発のフロント・バック分離を推進。効率的な並行開発をリードしています。
-        </li>
-        <li>
-            <strong>リリース品質のバリデーション実装：</strong><br>
-            不特定多数の学生が利用することを想定し、フォーム入力のバリデーションや例外処理を徹底。「ユーザーが誤った操作をしても壊れない」堅牢なフロントエンドを目指しています。
-        </li>
-    </ul>
-
-    <h4>このプロジェクトを通じて学んでいること</h4>
-    <p>
-        <strong>チーム開発における「伝える力」の重要性：</strong><br>
-        個人開発とは異なり、技術的な意図を言葉で正しく伝え、メンバーと認識を合わせることが開発速度に直結することを強く実感しています。GitHubを用いたコード管理や会議を通じ、チームで一つの目標に向かうプロセスを学んでいます。
-    </p>
-    <p>
-        <strong>プロダクトを世に出す責任感：</strong><br>
-        「自分が動かして満足する」段階を超え、実際のユーザー（同じ大学の学生）の手に渡ることを前提とした品質基準での開発を行っています。リリースに向けたデバッグや品質管理を通じ、エンジニアとしての責任感を養っています。
-    </p>
-</div>
-      <div class="work-card">
-    <h3>ポートフォリオサイトの制作</h3>
-    <p><strong>制作時期：</strong>2026年 1月（自身のキャリア構築として制作）</p>
-    <p><strong>使用技術：</strong>HTML, CSS, GitHub Pages</p>
-
-    <h4>プロジェクト概要</h4>
-    <p>
-        これまでの大学生活で制作してきたアプリケーションや、チームでの開発実績を統合的に管理・公開するためのポートフォリオサイトです。
-        採用担当者が「数分でスキルの核心を理解できる」ことをゴールに掲げ、情報の情報のスキャンしやすさを最優先に設計しました。
-    </p>
-
-    <h4>技術的な工夫点</h4>
-    <ul>
-        <li>
-            <strong>情報の階層化と視覚的な分かりやすさ：</strong><br>
-            各プロジェクトの「概要」「技術的工夫」「得たもの」を構造化し、専門用語の解説を添えることで、技術者以外の方が見ても理解しやすい親切な設計を心がけました。
-        </li>
-        <li>
-            <strong>GitHub Pagesによるデプロイの自動化：</strong><br>
-            GitHubのリポジトリと連携させることで、コードの更新と同時にサイトが自動反映されるパイプラインを活用。エンジニアとしての継続的なアウトプットを支える基盤を構築しました。
-        </li>
-        <li>
-            <strong>レスポンシブデザインの実装：</strong><br>
-            CSSを用いて、スマートフォンでも実績がスムーズに閲覧できるレイアウトを構築。閲覧者のデバイスを問わないユーザー体験（UX）を意識しました。
-        </li>
-    </ul>
-
-    <h4>この制作を通じて得たもの</h4>
-    <p>
-        <strong>「伝える技術」もエンジニアのスキル：</strong><br>
-        どんなに優れたコードを書いても、その価値を他者に正しく伝えられなければ社会には届かないということを、サイト制作を通じて痛感しました。情報の取捨選択と論理的な構成力を磨く良い経験となりました。
-    </p>
-    <p>
-        <strong>公開することによる責任感：</strong><br>
-        自分の技術をインターネット上に公開（デプロイ）することで、ソースコードの整理や権利関係の確認など、プロトタイプを作るだけでは意識しきれなかった「公開物としての品質」を意識する習慣がつきました。
-    </p>
-</div>
 
         </div>
       </section>
